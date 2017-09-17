@@ -9,6 +9,6 @@ if your wifi is different please fork this project and alter the wlan0 to your w
 how to run
 
 ```
-sudo docker run --privileged --net=host -it spoofssid-docker:latest /bin/bash
+sudo docker run --privileged --net=host -it spoofssid-docker:latest start.sh
 ```
 
