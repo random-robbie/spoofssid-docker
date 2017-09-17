@@ -10,4 +10,3 @@ how to run
 sudo docker run --privileged --net=host -it spoofssid-docker:latest /bin/bash
 ```
 
-NOT TESTED YET NEED TO WORK ON THE COMMAND TO ALLOW DOCKER TO USE WLAN0 FROM HOST....
