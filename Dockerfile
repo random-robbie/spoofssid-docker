@@ -1,6 +1,6 @@
 FROM alpine
 MAINTAINER txt3rob@gmail.com
-RUN apk --no-cache add wget gcc make g++ zlib-dev pcre ca-certificates curl net-tools aircrack-ng git bash-y
+RUN apk --no-cache add wget gcc make g++ zlib-dev pcre ca-certificates curl net-tools aircrack-ng git bash
 ENV DEBIAN_FRONTEND noninteractive
 RUN git clone https://github.com/wi-fi-analyzer/mdk3-master.git
 WORKDIR /mdk3-master/
