@@ -33,4 +33,4 @@ If any of this is wrong please let me know.
 
 ⋅⋅1. Work out how to automatically find the Wifi device and only assign the Wifi adapter, not the whole host.
 
-⋅⋅2. See if its possible to make an alpine image so i can shirnk the general image down.
+⋅⋅2. See if its possible to make an alpine image so i can shrink the general image down.
