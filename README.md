@@ -12,16 +12,16 @@ If your wifi has a different interface, please fork this project and alter the w
 sudo docker run --privileged --net=host -it txt3rob/spoofssid-docker /bin/bash start.sh
 ```
 
+### Raspberry Pi Version
+====
+``
+sudo docker run --privileged --net=host -it spoofssid-docker:armhf /bin/bash start.sh
+```
+
 [![capture.png](https://s26.postimg.org/4ju3ybieh/capture.png)](https://postimg.org/image/j318zqbj9/)
 
 
-### Raspberry Pi Version
-====
-```
-git clone -b armhf https://github.com/random-robbie/spoofssid-docker.git
-docker build -t spoofssid-docker spoofssid-docker
-sudo docker run --privileged --net=host -it spoofssid-docker:latest /bin/bash start.sh
-```
+
 
 If any of this is wrong please let me know.
 
@@ -30,4 +30,4 @@ If any of this is wrong please let me know.
 ====
 
 ⋅⋅1. Work out how to automatically find the Wifi device and only assign the Wifi adapter, not the whole host.
-
+-2. See if its possible to make an alpine image so i can shirnk the general image down.
