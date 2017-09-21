@@ -18,11 +18,7 @@ sudo docker run --privileged --net=host -it txt3rob/spoofssid-docker /bin/bash s
 ### Raspberry Pi Version
 ====
 ```
-git clone https://github.com/random-robbie/spoofssid-docker.git
-cd spoofssid-docker
-rm Dockerfile
-mv Dockerfile.armhf Dockerfile
-cd ..
+git clone -b armhf https://github.com/random-robbie/spoofssid-docker.git
 docker build -t spoofssid-docker spoofssid-docker
 sudo docker run --privileged --net=host -it spoofssid-docker:latest /bin/bash start.sh
 ```
