@@ -8,13 +8,15 @@ If your wifi has a different interface, please fork this project and alter the w
 
 ### How to Run
 ====
+
 ```
 sudo docker run --privileged --net=host -it txt3rob/spoofssid-docker /bin/bash start.sh
 ```
 
 ### Raspberry Pi Version
 ====
-``
+
+```
 sudo docker run --privileged --net=host -it spoofssid-docker:armhf /bin/bash start.sh
 ```
 
