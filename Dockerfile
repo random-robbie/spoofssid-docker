@@ -4,8 +4,8 @@ MAINTAINER txt3rob@gmail.com
 RUN apt-get update && apt-get dist-upgrade -y
 RUN apt-get install debian-keyring wget ca-certificates curl net-tools -y
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
-RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /$
-echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> $
+RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list && \
+echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -y update && apt-get -y dist-upgrade && apt-get clean
 RUN apt-get install mdk3 -y
