@@ -17,7 +17,7 @@ sudo docker run --privileged --net=host -it txt3rob/spoofssid-docker /bin/bash .
 ====
 
 ```
-sudo docker run --privileged --net=host -it spoofssid-docker:armhf /bin/bash ./start.sh
+sudo docker run --privileged --net=host -it txt3rob/spoofssid-docker:armhf /bin/bash ./start.sh
 ```
 
 [![capture.png](https://s26.postimg.org/4ju3ybieh/capture.png)](https://postimg.org/image/j318zqbj9/)
