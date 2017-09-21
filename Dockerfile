@@ -1,6 +1,6 @@
 FROM kalilinux/kali-linux-docker
 MAINTAINER txt3rob@gmail.com
-RUN apt-get install debian-keyring wget ca-certificates curl net-tools apt-utils -y
+RUN apt-get update && apt-get install debian-keyring wget ca-certificates curl net-tools apt-utils -y
 RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list && \
 echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 ENV DEBIAN_FRONTEND noninteractive
